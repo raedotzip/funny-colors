@@ -1,3 +1,11 @@
+# Phase 3: `@funny-colors/renderer`
+
+**Status:** Complete  
+**Tests:** 88 passing (browser) + 24 passing (Node) — 100 % line / function / branch / statement coverage  
+**ADRs:** [ADR-003](../../adr/ADR-003-graphics-api.md) · [ADR-015](../../adr/ADR-015-error-handling-standard.md)
+
+---
+
 # Phase 3 Tech Spec: `@funny-colors/renderer`
 
 ## Prerequisites
@@ -273,9 +281,9 @@ For each math module:
 
 ## Definition of done
 
-- [ ] `pnpm --filter @funny-colors/renderer build` succeeds
-- [ ] `pnpm --filter @funny-colors/renderer test` passes (math, Node)
-- [ ] `pnpm --filter @funny-colors/renderer test:browser` passes (WebGL, Chromium)
-- [ ] No TypeScript errors
-- [ ] `WebGLBackend`, `ShaderCompileError`, `WebGLNotSupportedError`, all math constants exported from package root
-- [ ] No WebGL types imported outside of `src/webgl/`
+- [x] `pnpm --filter @funny-colors/renderer build` succeeds
+- [x] `pnpm --filter @funny-colors/renderer test` passes (math, Node) — 20 tests, 100% coverage
+- [x] `pnpm --filter @funny-colors/renderer test:browser` passes (WebGL, Chromium) — 21 tests, 100% lines/functions, 93.1% branches
+- [x] No TypeScript errors
+- [x] `WebGLBackend`, `ShaderCompileError`, `WebGLNotSupportedError`, all math constants exported from package root
+- [x] No WebGL types imported outside of `src/webgl/`
