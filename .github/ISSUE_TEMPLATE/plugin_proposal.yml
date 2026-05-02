@@ -1,0 +1,52 @@
+name: Plugin Proposal
+description: Propose a new plugin for the Funny Colors plugin system
+title: "[Plugin]: "
+labels: ["enhancement", "plugin", "needs-triage"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Plugin name
+      placeholder: e.g. funny-colors-noise
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What does it generate?
+      description: Describe the procedural generation this plugin would produce — inputs, outputs, and what makes it distinct.
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: API sketch
+      description: How would someone use this plugin?
+      placeholder: |
+        import { funnyColors } from 'funny-colors'
+        import { myPlugin } from 'funny-colors/plugins/my-plugin'
+
+        funnyColors().use(myPlugin({ scale: 2, seed: 42 }))
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: Example output
+      description: A description, screenshot, or sketch of what this plugin would produce.
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Why does this belong in the plugin system vs. core?
+
+  - type: checkboxes
+    id: intent
+    attributes:
+      label: Are you willing to implement this?
+      options:
+        - label: Yes, I'd like to open a PR
+        - label: No, proposing for someone else to pick up

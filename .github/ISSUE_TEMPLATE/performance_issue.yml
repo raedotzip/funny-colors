@@ -1,0 +1,57 @@
+name: Performance Issue
+description: Report slow rendering, high memory use, or other performance problems
+title: "[Performance]: "
+labels: ["performance", "needs-triage"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where is this happening?
+      options:
+        - Core library
+        - Plugin system
+        - Demo site
+        - Multiple areas
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What is slow or expensive?
+      description: Describe what you're doing and what the performance problem looks like.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: How to reproduce
+      placeholder: |
+        import { funnyColors } from 'funny-colors'
+
+        // what triggers the slowness
+
+  - type: input
+    id: observed
+    attributes:
+      label: Observed performance
+      placeholder: e.g. 12 FPS, 800ms render, 2GB memory
+
+  - type: input
+    id: expected
+    attributes:
+      label: Expected performance
+      placeholder: e.g. 60 FPS, <50ms render
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU / device
+      placeholder: e.g. Apple M2, NVIDIA RTX 3080, iPhone 14
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser + version
+      placeholder: e.g. Chrome 124, Safari 17

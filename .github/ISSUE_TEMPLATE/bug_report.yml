@@ -1,0 +1,59 @@
+name: Bug Report (Core)
+description: Report a bug in the Funny Colors library or plugin system
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where is this happening?
+      options:
+        - Core library
+        - Plugin system
+        - Both
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps / minimal code
+      description: A minimal example goes a long way. Sandbox links welcome.
+      placeholder: |
+        import { funnyColors } from 'funny-colors'
+
+        // what you did
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Library version
+      placeholder: e.g. 1.2.3
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: OS, Node version, browser, WebGPU support
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console output / errors
+      render: shell
