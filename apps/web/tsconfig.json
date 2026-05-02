@@ -1,0 +1,7 @@
+{
+  "extends": "@funny-colors/tsconfig/app",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM", "DOM.Iterable"]
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "@funny-colors/tsconfig/base",
+  "compilerOptions": {
+    "composite": false
+  },
+  "references": [
+    { "path": "packages/tsconfig" },
+    { "path": "packages/core" },
+    { "path": "packages/nodes" },
+    { "path": "packages/renderer" },
+    { "path": "packages/funny-colors" },
+    { "path": "apps/web" }
+  ]
+}
