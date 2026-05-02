@@ -1,0 +1,65 @@
+node_modules/
+.pnpm-store
+dist/
+.turbo/
+coverage/
+*.env.local
+*.env.production
+.env
+.DS_Store
+
+# Go build artifacts
+apps/api/api
+apps/worker/worker
+
+# Test binaries
+*.test
+
+# Editor
+.vscode/
+.idea/
+
+# Docker
+infra/volumes/
+
+# Dev state
+.dev-seeded
+.logs/
+
+# Playwright
+apps/e2e/playwright-report/
+apps/e2e/test-results/
+
+# Kubernetes secrets (never commit — copy from secrets.yaml.example)
+infra/k8s/secrets.yaml
+
+# Token CSS files are generated from design.md — commit design.md, not the CSS.
+# Uncomment the lines below if you want to exclude the generated files from git.
+# packages/ui/src/css/tokens/colors.css
+# packages/ui/src/css/tokens/typography.css
+# packages/ui/src/css/tokens/spacing.css
+# packages/ui/src/css/tokens/motion.css
+
+# ── Generated build artifacts ─────────────────────────────────────────────────
+
+# esbuild JS bundles (apps/web/public/js/ except livereload.js which is static)
+apps/web/public/js/app.js
+apps/web/public/js/app.js.map
+apps/web/public/js/worker.js
+apps/web/public/js/worker.js.map
+apps/web/public/js/dev-api.js
+apps/web/public/js/dev-api.js.map
+apps/web/public/js/dev-logs.js
+apps/web/public/js/dev-logs.js.map
+
+# PostCSS output
+apps/web/public/css/app.css
+apps/web/public/css/app.css.map
+
+# WASM binary copied from lib/compute/pkg at build time
+apps/web/public/wasm/
+
+# Rust/wasm-pack output
+lib/compute/pkg/
+lib/compute/target/
+
