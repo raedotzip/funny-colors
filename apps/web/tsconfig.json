@@ -1,5 +1,5 @@
 {
-  "extends": "@funny-colors/tsconfig/app",
+  "extends": "../../packages/tsconfig/app.json",
   "compilerOptions": {
     "lib": ["ES2022", "DOM", "DOM.Iterable"]
   },

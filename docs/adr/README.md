@@ -22,3 +22,4 @@ Do not edit existing ADRs. If a decision is superseded, create a new ADR that re
 | [ADR-012](ADR-012-graph-editor-adapter.md) | Node Graph Editor — xyflow Behind GraphEditorAdapter Interface | Accepted |
 | [ADR-013](ADR-013-testing-strategy.md) | Testing Strategy — Vitest, Near 100% Coverage | Accepted |
 | [ADR-014](ADR-014-documentation-strategy.md) | Documentation Strategy — AI-Navigable, Multi-Context-Window | Accepted |
+| [ADR-015](ADR-015-error-handling-standard.md) | Error Handling Standard — Named Error Classes with Stable Codes | Accepted |

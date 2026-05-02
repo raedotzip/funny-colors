@@ -11,7 +11,7 @@ Phases must be executed in order. Each phase depends on the previous.
 | Phase | Spec | Package | Status | Depends on |
 |---|---|---|---|---|
 | 1 | [phase-1-scaffolding.md](phase-1-scaffolding.md) | Monorepo setup + all docs | **Complete** | — |
-| 2 | [phase-2-core.md](phase-2-core.md) | `@funny-colors/core` | Pending | Phase 1 |
+| 2 | [phase-2-core.md](initial-design/phase-2-core.md) | `@funny-colors/core` | **Complete** | Phase 1 |
 | 3 | [phase-3-renderer.md](phase-3-renderer.md) | `@funny-colors/renderer` | Pending | Phase 2 |
 | 4 | [phase-4-nodes.md](phase-4-nodes.md) | `@funny-colors/nodes` | Pending | Phases 2 + 3 |
 | 5 | [phase-5-public-package.md](phase-5-public-package.md) | `funny-colors` | Pending | Phases 2 + 3 + 4 |
